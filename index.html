@@ -11,9 +11,10 @@
   <form action="https://script.google.com/macros/s/AKfycbw65oLbQ0aNtuFoWbQ1mzun9SjgDyJV1vJyTZCFTTgIpLJy1WaD6SOkrVnfE0HBGJ9T/exec" method="post">
   <div class="container">
     <img src="Tablo Logo.jpg" alt="Tablo Logo">
-    <h1><strong>T1 BODEGA USAGE</strong></h1>
+    <h1><strong>TABLO 1 <br> BODEGA USAGE</strong></h1>
     <label>PRODUCT:</label><br>
-    <input list="products" id="product input" name="PRODUCT NAME" placeholder="Search Here">
+    <input list="products" id="product input" name="PRODUCT NAME" placeholder="Search Here"
+    onchange="resetIfInvalid(this);" required>
     <datalist id="products">
         <option value="Ajinomoto 1kg">
         <option value="Alaska Whipped Cream">
@@ -593,6 +594,11 @@
   <form action="checklist.html">
       <input type="submit" value="CHECKLIST" class="button">
   </form>
+
+  <button class="button"
+    onclick="window.top.location.replace('https://script.google.com/macros/s/AKfycbz1kXsy0E2so2tzl1OPS3Ltrl83Nrjoc6zIa2VGQU1_y8-SRoQfpfW9PAnF2sXgziYk/exec')"
+    type="submit">REAL TIME <br> TRIMMINGS</button><br>
+
   </div>
 </body>
 <script src="script.js"></script>
