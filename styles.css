@@ -38,6 +38,7 @@ fieldset {
     text-align: left;
     border-color: rgb(255, 141, 90);
     border-radius: 10px;
+    padding-left: 100px;
 }
 
 iframe {
